@@ -4,6 +4,9 @@
 
 # comci-api
 
+[![npm version](https://img.shields.io/npm/v/comci-api.svg)](https://www.npmjs.com/package/comci-api)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
 컴시간 학생시간표([`http://www.xn--s39aj90b0nb2xw6xh.kr/`](http://www.xn--s39aj90b0nb2xw6xh.kr/) → `http://comci.net:4082/st`)를 위한 TypeScript(Node.js) **코어 라이브러리 + HTTP REST API 서버**입니다.
 
 ## 주요 동작 방식
@@ -22,7 +25,19 @@
 
 - Node.js 20+ (Node 24에서 검증됨, 내장 `fetch` 및 `TextDecoder('euc-kr')` 사용)
 
-## 설치 및 실행
+## 설치
+
+### 라이브러리로 사용
+
+```bash
+npm install comci-api
+```
+
+```ts
+import { ComciClient } from 'comci-api';
+```
+
+### 저장소에서 직접 실행
 
 ```bash
 npm install
