@@ -1,0 +1,68 @@
+{
+  "name": "comci-api",
+  "version": "0.1.0",
+  "description": "Unofficial TypeScript SDK & HTTP REST API for Comcigan Student Timetable (컴시간 학생시간표)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsx watch src/server/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "comcigan",
+    "comci",
+    "컴시간",
+    "timetable",
+    "시간표",
+    "school",
+    "parser",
+    "hono",
+    "typescript",
+    "sdk"
+  ],
+  "license": "MIT",
+  "author": "윤주호 (amanhasfallenintoriverincity)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanhasfallenintoriverincity/comci-api.git"
+  },
+  "homepage": "https://github.com/amanhasfallenintoriverincity/comci-api#readme",
+  "bugs": {
+    "url": "https://github.com/amanhasfallenintoriverincity/comci-api/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "hono": "^4.7.6",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  }
+}
