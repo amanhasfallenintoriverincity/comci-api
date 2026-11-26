@@ -1,6 +1,6 @@
 {
   "name": "comci-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial TypeScript SDK & HTTP REST API for Comcigan Student Timetable (컴시간 학생시간표)",
   "type": "module",
   "main": "./dist/index.js",
@@ -39,7 +39,7 @@
     "sdk"
   ],
   "license": "MIT",
-  "author": "윤주호 (amanhasfallenintoriverincity)",
+  "author": "amanhasfallenintoriverincity",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amanhasfallenintoriverincity/comci-api.git"
